@@ -1,0 +1,216 @@
+/*imports*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-color: #000;
+}
+
+* {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue',
+        cursive;
+
+}
+
+/*Variables*/
+:root {
+    --naranja: #fd7202;
+    --azul: #230981;
+    --blanco: #fff;
+    --gris: #888282;
+    --negro: #000;
+    --degradado: linear-gradient(180deg, #FD7202 0%, rgba(253, 114, 2, 0) 100%),
+        linear-gradient(180deg, #E27D2C 25.52%, #0804ED 55.21%);
+}
+
+/*Clases de apoyo*/
+
+.fondo-transparente {
+    background-color: rgba(0, 0, 0, .7);
+    border-radius: .5rem;
+    padding: .5rem;
+}
+
+/*header*/
+
+header {
+    height: 100vh;
+    background: var(--azul) url(/assets/img/main-bkg.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.m-bienvenido>p,
+.bienvenido {
+    width: fit-content;
+    padding: 0 1rem;
+    margin: 0rem 1rem;
+    border-radius: .5rem;
+    color: var(--azul);
+    font-size: 3rem;
+    text-shadow: black 0 0 .25rem;
+}
+
+.A {
+    margin-left: 12rem;
+    padding: 0;
+}
+
+.m-bienvenido>p {
+    margin-left: 7rem;
+}
+
+.titulo-color {
+    margin-left: 10rem;
+    background: var(--degradado);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 3rem;
+}
+
+.bienvenido {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.texto-n {
+    color: var(--blanco);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1 rem;
+    text-shadow: #000 0 0 .25rem;
+    font-weight: 100;
+    height: 30vh;
+    width: 50vw;
+}
+
+/*botones header*/
+
+.btns {
+    font-size: 1.5rem;
+    margin: 3rem 4rem;
+}
+
+.btn-gris,
+.btn-naranja {
+    transition: all 0.4s;
+}
+
+.btn-naranja {
+    background-color: var(--naranja);
+    margin: 3rem;
+    padding: 1rem;
+    color: var(--blanco);
+    border: var(--naranja) .5rem solid;
+
+    border-radius: 1rem;
+    text-decoration: none;
+    box-shadow: var(--negro) .15rem .15rem .5rem;
+}
+
+.btn-naranja:hover {
+    background-color: var(--azul);
+}
+
+.btn-gris {
+    background-color: var(--gris);
+    margin: 3rem 1rem;
+    padding: 1rem;
+    color: var(--blanco);
+    border: var(--naranja) .5rem solid;
+    border-radius: 1rem;
+    text-decoration: none;
+    box-shadow: var(--negro) .15rem .15rem .5rem;
+}
+
+.btn-gris:hover {
+    background-color: var(--azul);
+}
+
+/*Main (Carrusel)*/
+
+main {
+    background-color: #020202;
+    margin: .5rem 0;
+}
+
+main h2 {
+    color: #fff;
+    font-weight: 400;
+    padding: .5rem;
+    border-bottom: var(--naranja) .15rem solid;
+    margin-left: 0;
+}
+
+.carrusel {
+    width: 100vw;
+    max-width: 120rem;
+    padding: 0;
+    margin: 3vh .5rem;
+    overflow: hidden;
+    box-sizing: border-box;
+    border-radius: .8rem;
+}
+
+.carrusel .tarjeta {
+    width: 200%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    transform: translateX(-50%);
+    transition: all 1s ease-out;
+}
+
+.carrusel .img {
+    width: 300px;
+    height: 200px;
+    background-color: var(--gris);
+    min-height: 10vh;
+    border-radius: .5rem;
+}
+
+.carrusel .puntos {
+    flex-flow: row nowrap;
+    list-style: none;
+}
+
+.carrusel .punto {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 3rem;
+    background-size: contain;
+    background-color: rgba(250, 50, 50, .5);
+}
+
+.carrusel .punto:hover {
+    transform: scale(1.2);
+}
+
+.carrusel .punto.activo {
+    background-color: none;
+}
+
+.izq {
+    background: var(--gris) url(/assets/img/arrow-l.svg);
+}
+
+.der {
+    background: var(--gris) url(/assets/img/arrow-r.svg);
+}
+
+.d {
+    position: relative;
+    top: -115px;
+    left: 93vw;
+    width: fit-content;
+}
+
+.i {
+    position: absolute;
+    top: 124vh;
+    left: 3vw;
+    width: fit-content;
+}
