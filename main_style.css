@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background: #433f3f;
+    width: 100vw;
+
+
+}
+
+header {
+    width: 100vw;
+    height: 9vh;
+    background: #00000080;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+
+.logito {
+    padding: 4.9px 20px;
+    width: 13vh;
+    float: left;
+}
+
+nav {
+    background: transparent;
+}
+
+nav ul {
+    float: right;
+
+}
+
+.quien {
+    float: left;
+    list-style: none;
+}
+
+.quien a {
+
+    color: white;
+    background: #230981;
+    padding: .96rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    font-size: 1.05rem;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: #ff7300;
+    background: #2309819f
+}
+
+.splash {
+    background: url(/assets/imagenes/olq.jpg) center center fixed;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+}
+
+.splash h1 {
+
+    text-shadow: 5px 5px 5px black;
+    color: white;
+    margin-top: 15vh;
+    margin-right: 30vw;
+    font-size: 50px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+strong {
+    float: right;
+    text-shadow: 5px 5px 5px black;
+    text-transform: uppercase;
+    color: #ff7300;
+    font-size: 50px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+
+}
+
+.a {
+    margin-top: 10px;
+    margin-left: 190px;
+}
+
+.splash h2 {
+    width: 80vw;
+    text-align: center;
+    background: #1a2537c0;
+    color: #fff;
+    padding: 2rem;
+    border-radius: .5rem;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin-top: 7vh;
+    float: right;
+    margin-right: 5vw;
+
+
+}
+
+button {
+    margin: .8rem;
+    margin-top: 10px;
+    padding: 15px;
+    background: #262626;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    transition: .3s ease all;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+
+}
+
+button a {
+
+    text-decoration: none;
+    color: #fff;
+}
+
+button a:hover {
+    color: #fff;
+}
+
+button span {
+
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+button::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #ff7300;
+    color: #262626;
+    position: absolute;
+    z-index: 1;
+    top: -80px;
+    left: 0;
+    transition: .3s ease-in-out all;
+
+}
+
+.button2::after {
+    background: #230981;
+}
+
+button:hover::after {
+    top: 0;
+}
+
+.egresadosit {
+    text-align: center;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    font-size: 40px;
+    padding: 2rem;
+}
+
+.carousel {
+
+    min-height: 300px;
+    overflow: hidden;
+}
+
+.carousel .carousel-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    background: linear-gradient(#ff7300, #230981);
+    width: 300px;
+    height: 200px;
+    border-radius: .75rem;
+
+
+
+}
+
+.carousel .carousel-item img {
+    width: 35%;
+    margin-left: 95px;
+    margin-top: 10px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 70px;
+}
+
+.subtitulo {
+    font-size: 25px;
+    margin-top: 130px;
+    color: #fff;
+
+}
+
+.p {
+    color: #fff;
+    font-size: 20px;
+
+}
+
+#contacto {
+    background: #fff;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+/******************************************************************************************
+********************************RESPONSIVE*********************************************
+******************************************************************************************/
